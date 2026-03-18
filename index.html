@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstRep Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color:#1a0f0a;
+            color:#f5e9e2;
+        }
+
+        header {
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 60px;
+        }
+
+        header h1 {
+            font-family:'Playfair Display', serif;
+        }
+
+        nav a {
+            margin-left:30px;
+            text-decoration:none;
+            color:#f5e9e2;
+            font-size:14px;
+        }
+
+        .hero {
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:100px 60px;
+        }
+
+        .hero-text {
+            max-width:600px;
+        }
+
+        .hero h2 {
+            font-family:'Playfair Display', serif;
+            font-size:55px;
+            line-height:1.1;
+        }
+
+        .hero span { color:#d6a77a; }
+
+        .hero p {
+            margin-top:20px;
+            color:#d9c2b5;
+        }
+
+        .buttons { margin-top:30px; }
+
+        .btn-primary {
+            background:#d6a77a;
+            padding:12px 25px;
+            border:none;
+            margin-right:10px;
+            cursor:pointer;
+            font-weight:600;
+            text-decoration:none;
+            color:#1a0f0a;
+            display:inline-block;
+        }
+
+        .btn-secondary {
+            background:transparent;
+            border:1px solid #d6a77a;
+            padding:12px 25px;
+            color:#d6a77a;
+            cursor:pointer;
+            text-decoration:none;
+        }
+
+        .hero img {
+            width:450px;
+            border-radius:15px;
+        }
+
+        .values {
+            display:grid;
+            grid-template-columns:repeat(5,1fr);
+            background:#c18a56;
+            text-align:center;
+        }
+
+        .values div {
+            padding:20px;
+            font-size:13px;
+        }
+
+        .benefits {
+            padding:80px 60px;
+            text-align:center;
+        }
+
+        .benefits h3 {
+            font-family:'Playfair Display', serif;
+            font-size:32px;
+            margin-bottom:30px;
+        }
+
+        .benefit-grid {
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:30px;
+        }
+
+        .benefit-box {
+            background:#2a1710;
+            padding:25px;
+            border-radius:12px;
+        }
+
+        .benefit-box h4 {
+            color:#d6a77a;
+            margin-bottom:10px;
+        }
+
+        .benefit-box p {
+            font-size:14px;
+            color:#d9c2b5;
+        }
+
+        .about {
+            background:#f5e9e2;
+            color:#1a0f0a;
+            padding:80px 60px;
+            display:flex;
+            gap:40px;
+            align-items:center;
+        }
+
+        .about img {
+            width:400px;
+            border-radius:15px;
+        }
+
+        .about-text h3 {
+            font-family:'Playfair Display', serif;
+            font-size:34px;
+            margin-bottom:20px;
+        }
+
+        .testimonials {
+            padding:80px 60px;
+        }
+
+        .testimonial-grid {
+            display:grid;
+            grid-template-columns:repeat(5,1fr);
+            gap:20px;
+        }
+
+        .card {
+            background:#2a1710;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        .stars {
+            color:gold;
+            margin-bottom:10px;
+        }
+
+        footer {
+            text-align:center;
+            padding:20px;
+            font-size:12px;
+            color:#aaa;
+        }
+
+        @media(max-width:1000px){
+            .hero { flex-direction:column; }
+            .about { flex-direction:column; }
+            .testimonial-grid { grid-template-columns:1fr 1fr; }
+            .values { grid-template-columns:1fr 1fr; }
+            .benefit-grid { grid-template-columns:1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FirstRep</h1>
+   <nav>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="blog.html">BLOG</a>
+    <a href="contact.html">CONTACT</a>
+</nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Your fitness journey <br><span>starts here.</span></h2>
+        <p>
+            FirstRep is a modern fitness brand designed specifically for beginners who feel overwhelmed, intimidated, or unsure where to start. 
+            Our mission is to simplify fitness and make it accessible to everyone by providing structured, easy to follow programs that build both 
+            physical strength and mental confidence. We believe that everyone deserves a starting point that feels safe, supportive, and achievable. 
+            Through guided workouts, clear instructions, and a welcoming approach, FirstRep helps you take your very first step and keep going with confidence.
+        </p>
+        <div class="buttons">
+            <a href="contact.html" class="btn-primary">GET STARTED</a>
+            <a href="landing.html" class="btn-secondary">LEARN MORE</a>
+        </div>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" alt="Fitness Training">
+</section>
+
+<section class="values">
+    <div>BEGINNER FRIENDLY</div>
+    <div>STEP-BY-STEP GUIDANCE</div>
+    <div>NO INTIMIDATION</div>
+    <div>BUILD CONFIDENCE</div>
+    <div>REAL, LASTING RESULTS</div>
+</section>
+
+<section class="benefits">
+    <h3>Key Benefits of FirstRep</h3>
+
+    <div class="benefit-grid">
+
+        <div class="benefit-box">
+            <h4>Clarity & Structure</h4>
+            <p>Know exactly what to do every step of the way with guided workouts designed for complete beginners.</p>
+        </div>
+
+        <div class="benefit-box">
+            <h4>Confidence Building</h4>
+            <p>Develop confidence in your fitness journey through simple, achievable routines and consistent progress.</p>
+        </div>
+
+        <div class="benefit-box">
+            <h4>Safe & Effective Progress</h4>
+            <p>Train safely with structured programs that reduce injury risk while delivering real, lasting results.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about">
+    <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" alt="Workout">
+    <div class="about-text">
+        <h3>Why choose FirstRep?</h3>
+        <p>
+            We focus on real people starting real journeys. FirstRep removes confusion by offering structured plans, 
+            simple workouts, and clear progress tracking. Our programs are designed to reduce anxiety, improve consistency, 
+            and help you stay motivated. You’ll gain strength, improve your health, and most importantly—build confidence 
+            in yourself every step of the way.
+        </p>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h3>What our clients say</h3>
+    <div class="testimonial-grid">
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <p>"I was scared to even step into a gym. FirstRep changed everything for me."</p>
+            <h4>- Sarah M.</h4>
+        </div>
+
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <p>"Clear, simple, and actually made me consistent for the first time."</p>
+            <h4>- James K.</h4>
+        </div>
+
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <p>"I feel stronger and more confident every week."</p>
+            <h4>- Aisha R.</h4>
+        </div>
+
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <p>"Perfect for beginners. No pressure, just progress."</p>
+            <h4>- Daniel T.</h4>
+        </div>
+
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <p>"The guidance is amazing. I finally understand what I'm doing."</p>
+            <h4>- Lina S.</h4>
+        </div>
+    </div>
+</section>
+
+<!-- NEW CTA ADDED -->
+<div style="text-align:center; margin:60px 0;">
+    <a href="landing.html" class="btn-primary">START YOUR JOURNEY TODAY</a>
+</div>
+
+<footer>
+    © 2026 FirstRep Fitness. All rights reserved.
+
+    <p style="margin-top:20px; font-size:12px; color:#aaa; max-width:800px; margin-left:auto; margin-right:auto; line-height:1.6;">
+        The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. If you are the copyright owner of any image and believe it has been used without proper attribution, please contact us, and we will make the necessary corrections.
+        <br><br>
+        The views expressed on this site do not necessarily reflect the official policies or positions of the university. The university is not responsible for any errors or omissions or the results obtained from using this information.
+        <br><br>
+        By using this website, you acknowledge and agree to these terms.
+    </p>
+</footer>
+
+</body>
+</html>

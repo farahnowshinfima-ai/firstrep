@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | FirstRep Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            font-family:'Inter', sans-serif;
+            background:#1a0f0a;
+            color:#f5e9e2;
+        }
+
+        header {
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 60px;
+        }
+
+        header h1 { font-family:'Playfair Display', serif; }
+
+        nav a {
+            margin-left:30px;
+            text-decoration:none;
+            color:#f5e9e2;
+            font-size:14px;
+        }
+
+        .hero {
+            padding:100px 60px;
+            max-width:800px;
+        }
+
+        .hero h2 {
+            font-family:'Playfair Display', serif;
+            font-size:50px;
+        }
+
+        .hero span { color:#d6a77a; }
+
+        .hero p {
+            margin-top:20px;
+            color:#d9c2b5;
+        }
+
+        .overview {
+            background:#f5e9e2;
+            color:#1a0f0a;
+            padding:80px 60px;
+        }
+
+        .overview h3 {
+            font-family:'Playfair Display', serif;
+            font-size:32px;
+            margin-bottom:20px;
+        }
+
+        .overview p {
+            max-width:700px;
+            margin-bottom:20px;
+        }
+
+        .team {
+            padding:80px 60px;
+        }
+
+        .team h3 {
+            font-family:'Playfair Display', serif;
+            margin-bottom:40px;
+        }
+
+        .team-grid {
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:30px;
+        }
+
+        .member {
+            background:#2a1710;
+            padding:20px;
+            border-radius:12px;
+            text-align:center;
+        }
+
+        .member img {
+            width:100%;
+            border-radius:10px;
+            margin-bottom:15px;
+        }
+
+        .member h4 { margin-bottom:5px; }
+        .member p { font-size:14px; color:#d9c2b5; }
+
+        .timeline {
+            background:#f5e9e2;
+            color:#1a0f0a;
+            padding:80px 60px;
+        }
+
+        .timeline h3 {
+            font-family:'Playfair Display', serif;
+            margin-bottom:30px;
+        }
+
+        .timeline-item { margin-bottom:15px; }
+
+        .timeline-item strong { color:#c18a56; }
+
+        .awards {
+            padding:80px 60px;
+        }
+
+        .awards h3 {
+            font-family:'Playfair Display', serif;
+            margin-bottom:20px;
+        }
+
+        .awards li {
+            margin-bottom:10px;
+            color:#d9c2b5;
+        }
+
+        footer {
+            text-align:center;
+            padding:20px;
+            font-size:12px;
+            color:#aaa;
+        }
+
+        @media(max-width:900px){
+            .team-grid { grid-template-columns:1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FirstRep</h1>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Building confidence <br><span>through fitness.</span></h2>
+    <p>
+        FirstRep was created to solve one simple problem: beginners don’t know where to start. 
+        We exist to remove that confusion and replace it with clarity, structure, and confidence.
+    </p>
+</section>
+
+<section class="overview">
+    <h3>Our Story, Mission & Values</h3>
+
+    <p>
+        FirstRep was founded with a clear purpose: to make fitness accessible, simple, and welcoming for complete beginners. 
+        Many people struggle to start their fitness journey due to confusion, lack of guidance, or fear of being judged. 
+        FirstRep was created to eliminate these barriers and provide a clear, structured starting point where anyone can begin with confidence.
+    </p>
+
+    <p>
+        Our approach focuses on simplicity and consistency. Instead of overwhelming users with complex routines, 
+        we provide step-by-step guidance that explains exactly what to do and how to do it. 
+        This allows individuals to build strength, stay consistent, and develop long-term habits without feeling intimidated.
+    </p>
+
+    <p><strong>Mission:</strong> At FirstRep, our mission is to empower beginners by providing clear, structured, and easy-to-follow fitness guidance that removes confusion and builds confidence. We aim to create a supportive environment where individuals can develop strength, improve their health, and build sustainable habits that last a lifetime.</p>
+
+    <p><strong>Vision:</strong> Our vision is to become the leading global fitness platform for beginners, where anyone regardless of experience can confidently begin their fitness journey. We strive to create a future where fitness is no longer intimidating, but instead seen as an accessible and empowering part of everyday life.</p>
+
+    <p><strong>Values:</strong> We believe in simplicity by making fitness easy to understand, consistency by encouraging steady progress, inclusivity by welcoming everyone regardless of background or experience, confidence-building by helping users believe in themselves, and sustainable progress by focusing on long-term results rather than quick fixes.</p>
+</section>
+
+<section class="team">
+    <h3>Meet Our Team</h3>
+    <div class="team-grid">
+
+        <div class="member">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Founder">
+            <h4>Farah Ali</h4>
+            <p>Founder & CEO</p>
+            <p>
+                Farah founded FirstRep after experiencing gym anxiety and confusion as a beginner. 
+                With a background in computer science, she combines problem-solving skills with a passion 
+                for self-improvement to build a platform that simplifies fitness. She leads the company’s 
+                vision, branding, and user experience strategy.
+            </p>
+        </div>
+<div class="member">
+    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Coach">
+    <h4>Daniel Brooks</h4>
+    <p>Head Coach</p>
+    <p>
+        Daniel is a certified personal trainer with over 8 years of experience working with beginners. 
+        He specializes in creating structured, easy-to-follow programs that focus on proper form, 
+        injury prevention, and long-term consistency. He ensures all FirstRep workouts are effective, 
+        safe, and beginner-friendly.
+    </p>
+</div>
+
+        <div class="member">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Designer">
+            <h4>Lina Hassan</h4>
+            <p>Program Designer</p>
+            <p>
+                Lina has a background in health science and program design. She focuses on breaking down 
+                complex fitness concepts into simple, easy-to-follow steps. Her goal is to make every program 
+                feel supportive, structured, and accessible for beginners at every stage.
+            </p>
+
+
+    </div>
+</section>
+</section>
+
+    </div>
+</section>
+
+<section class="timeline">
+    <h3>Our Journey</h3>
+
+    <div class="timeline-item"><strong>2024:</strong> FirstRep founded to simplify fitness for beginners.</div>
+    <div class="timeline-item"><strong>2025:</strong> Official launch of structured beginner fitness programs.</div>
+    <div class="timeline-item"><strong>2025:</strong> Reached over 5,000 active users within the first year.</div>
+    <div class="timeline-item"><strong>2026:</strong> Expanded globally and helped 15,000+ beginners start their fitness journey.</div>
+</section>
+
+<section class="awards">
+    <h3>Awards & Recognition</h3>
+    <ul>
+        <li>🏆 Best Beginner Fitness Program 2025</li>
+        <li>🏆 Top Emerging Fitness Brand</li>
+        <li>🏆 Excellence in Online Coaching</li>
+    </ul>
+</section>
+
+<footer>
+    © 2026 FirstRep Fitness. All rights reserved.
+</footer>
+
+</body>
+</html>

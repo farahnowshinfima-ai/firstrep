@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | FirstRep Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            font-family:'Inter', sans-serif;
+            background:#1a0f0a;
+            color:#f5e9e2;
+        }
+
+        header {
+            display:flex;
+            justify-content:space-between;
+            padding:20px 60px;
+        }
+
+        header h1 { font-family:'Playfair Display', serif; }
+
+        nav a {
+            margin-left:30px;
+            text-decoration:none;
+            color:#f5e9e2;
+            font-size:14px;
+        }
+
+        .section {
+            padding:80px 60px;
+        }
+
+        h2 {
+            font-family:'Playfair Display', serif;
+            font-size:45px;
+            margin-bottom:20px;
+        }
+
+        .container {
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:40px;
+        }
+
+        form input, form textarea {
+            width:100%;
+            padding:12px;
+            margin-bottom:15px;
+            border:none;
+            border-radius:5px;
+        }
+
+        .btn {
+            background:#d6a77a;
+            padding:12px 20px;
+            border:none;
+            cursor:pointer;
+            color:#1a0f0a;
+            font-weight:600;
+        }
+
+        .info p {
+            margin-bottom:10px;
+        }
+
+        .social a {
+            margin-right:10px;
+            text-decoration:none;
+            color:#d6a77a;
+            font-size:14px;
+        }
+
+        iframe {
+            width:100%;
+            height:250px;
+            border-radius:10px;
+            margin-top:20px;
+        }
+
+        footer {
+            text-align:center;
+            padding:20px;
+            font-size:12px;
+            color:#aaa;
+        }
+
+        @media(max-width:900px){
+            .container { grid-template-columns:1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FirstRep</h1>
+    <nav>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="blog.html">BLOG</a>
+    <a href="contact.html">CONTACT</a>
+</nav>
+</header>
+
+<section class="section">
+    <h2>Contact Us</h2>
+    <p style="margin-bottom:30px; max-width:600px;">
+    Have questions or need personalized guidance? Our team is here to support you every step of your fitness journey. 
+    Reach out to us for expert advice, clear direction, and the confidence you need to get started and stay consistent.
+</p>
+
+    <div class="container">
+
+        <!-- CONTACT FORM -->
+        <form action="thankyou.html">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- CONTACT INFO -->
+        <div class="info">
+            <p><strong>Phone:</strong> +1 (647) 555-1234</p>
+            <p><strong>Email:</strong> support@firstrepfitness.com</p>
+            <p><strong>Address:</strong> 123 Fitness Street, Toronto, ON, Canada</p>
+
+            <!-- MAP -->
+            <iframe src="https://www.google.com/maps?q=Toronto&output=embed"></iframe>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="social" style="margin-top:20px;">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- NEW CTA BUTTON -->
+    <div style="text-align:center; margin-top:50px;">
+        <a href="landing.html" style="
+            padding:12px 25px;
+            background:#d6a77a;
+            color:#1a0f0a;
+            text-decoration:none;
+            border-radius:6px;
+            font-weight:600;
+        ">
+            Explore FirstRep
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 FirstRep Fitness. All rights reserved.
+</footer>
+
+</body>
+</html>

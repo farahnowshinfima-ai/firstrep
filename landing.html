@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Fitness Journey | FirstRep</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            font-family:'Inter', sans-serif;
+            background:#1a0f0a;
+            color:#f5e9e2;
+        }
+
+        header {
+            text-align:center;
+            padding:20px;
+        }
+
+        header h1 {
+            font-family:'Playfair Display', serif;
+        }
+
+        .container {
+            max-width:1000px;
+            margin:auto;
+            padding:80px 20px;
+            text-align:center;
+        }
+
+        h1 {
+            font-family:'Playfair Display', serif;
+            font-size:48px;
+            margin-bottom:20px;
+        }
+
+        .highlight { color:#d6a77a; }
+
+        p {
+            color:#d9c2b5;
+            margin-bottom:25px;
+            line-height:1.6;
+            max-width:700px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        img {
+            width:100%;
+            max-width:800px;
+            border-radius:12px;
+            margin:30px 0;
+        }
+
+        .benefits {
+            display:flex;
+            justify-content:space-around;
+            margin:40px 0;
+            flex-wrap:wrap;
+        }
+
+        .benefit {
+            max-width:250px;
+            margin:10px;
+        }
+
+        .benefit h3 {
+            color:#d6a77a;
+            margin-bottom:10px;
+        }
+
+        .cta-strong {
+            margin:50px auto;
+            text-align:center;
+            font-weight:600;
+            font-size:18px;
+            color:#f5e9e2;
+            max-width:600px;
+        }
+
+        form {
+            background:#2a1710;
+            padding:30px;
+            border-radius:12px;
+            max-width:500px;
+            margin:40px auto;
+        }
+
+        input, select {
+            width:100%;
+            padding:12px;
+            margin-bottom:15px;
+            border:none;
+            border-radius:5px;
+        }
+
+        button {
+            width:100%;
+            padding:14px;
+            background:#d6a77a;
+            border:none;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        .cta-text {
+            margin-top:20px;
+            font-size:14px;
+            color:#aaa;
+        }
+
+        @media(max-width:768px){
+            .benefits { flex-direction:column; align-items:center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NEW HEADER ADDED -->
+<header>
+    <h1>FirstRep</h1>
+</header>
+
+<div class="container">
+
+    <h1>Your fitness journey <span class="highlight">starts today.</span></h1>
+
+    <p>
+        Feel confident stepping into fitness for the first time. FirstRep is designed specifically for beginners 
+        who feel overwhelmed or unsure where to start. We provide clear, structured guidance so you can build 
+        strength, consistency, and confidence without confusion.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+
+    <div class="benefits">
+
+        <div class="benefit">
+            <h3>Simple & Clear</h3>
+            <p>No confusing workouts. Just step-by-step guidance made for beginners.</p>
+        </div>
+
+        <div class="benefit">
+            <h3>Build Confidence</h3>
+            <p>Feel comfortable and confident in your fitness journey from day one.</p>
+        </div>
+
+        <div class="benefit">
+            <h3>Real Progress</h3>
+            <p>Structured programs designed for consistent and lasting results.</p>
+        </div>
+
+    </div>
+
+    <p class="cta-strong">
+        Start your transformation today—no experience needed, just your first step.
+    </p>
+
+    <form action="thankyou.html" method="post">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+
+        <select name="level" required>
+            <option value="">Your Fitness Level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+        </select>
+
+        <button type="submit">Start Your Journey</button>
+
+    </form>
+
+    <p class="cta-text">
+        Join 15,000+ beginners who have already taken their first step with FirstRep.
+    </p>
+
+    <div style="text-align:center; margin-top:30px;">
+        <a href="index.html" style="
+            padding:12px 25px;
+            background:#d6a77a;
+            color:#1a0f0a;
+            text-decoration:none;
+            border-radius:6px;
+            font-weight:600;
+        ">
+            RETURN TO HOME PAGE
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
